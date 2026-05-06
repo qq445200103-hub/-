@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>添加服务/技能</title>
+</head>
+<body>
+    <h1>添加服务/技能</h1>
+    <form method="POST">
+        <label for="title">标题:</label>
+        <input type="text" id="title" name="title" required>
+        <br>
+        <label for="description">描述:</label>
+        <textarea id="description" name="description" required></textarea>
+        <br>
+        <label for="owner">提供者姓名:</label>
+        <input type="text" id="owner" name="owner" required>
+        <br>
+        <input type="submit" value="添加">
+    </form>
+    <a href="{{ url_for('index') }}">返回主页面</a>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>服务列表</title>
+</head>
+<body>
+    <h1>邻里服务/技能列表</h1>
+    <ul>
+        {% for listing in listings %}
+            <li>
+                <strong>{{ listing[1] }}</strong> (提供者: {{ listing[3] }})<br>
+                {{ listing[2] }}
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">返回主页面</a>
+</body>
+</html>
